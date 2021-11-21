@@ -3,6 +3,10 @@
 /* Progam Seraph keeps Neo in check = Neo vs Seraph and Neo teaming up with Seraph is a constant 
 to keep balance in The Matrix */
 
+
+void oddEven();
+void ReverseStringsInTumblers();
+
 int main(){
 
     /* char userInput[100]; */
@@ -24,16 +28,10 @@ int main(){
         
        /* stringCompare(userInput)*/
         if(userInput == 1){
-            int inputVal;
-            printf("\nPlease enter a number Neo to see if you are an Odd or Even Program: ");
-            scanf("%d", &inputVal);
-            
-            if(inputVal % 2 == 0){
-               printf("You are Even Neo\n");
-            }
-            else{
-                printf("You are 0dd Neo\n");
-            }
+           oddEven();
+        }
+        else if(userInput == 2){
+            ReverseStringsInTumblers();
         }
         else if(userInput == 4){
             printf("YOU ARE THE ONE NEO");
@@ -46,16 +44,28 @@ int main(){
 
 } 
 
-/*
-char stringCompare(char userInput[100], char Value[100]){
-    
-    strcpy(userInput, value)
-
-
+void oddEven(){
+        int oddEvenInput;
+        printf("\nPlease enter a number Neo to see if you are an Odd or Even Program: ");
+        scanf("%d", &oddEvenInput);
+            
+        if(oddEvenInput % 2 == 0){
+            printf("You are Even Neo\n");
+        }
+        else{
+            printf("You are 0dd Neo\n");
+        }
 }
 
-*/
 
+void ReverseStringsInTumblers(){
+    char myString[100];
+    
+    printf("Type in a word to see the code hidden in tumblers: ");
+    scanf("%s", myString);
+    printf("TEST FINISH CODE WORD = %s\n",myString);
+    /* find reverse and print reverse string data with binary data and hex */
+}
 
 
 
